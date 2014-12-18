@@ -556,7 +556,7 @@ var snowStorm = (function(window, document) {
     }
   };
   this.deviceOrientation = function(e) {
-	  windOffset = -(e.gamma/8);
+	  windOffset = (e.gamma/8);
   }
 
   this.createSnow = function(limit,allowInactive) {
