@@ -6775,4 +6775,7 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
+.labelled {
+  background-color:rgba(00,96,88,0.2);
+}
 /* PINGENDO COMMENT DO NOT REMOVE */
