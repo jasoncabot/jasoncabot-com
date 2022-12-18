@@ -1,0 +1,4 @@
+baseURL = "http://jasoncabot.com/"
+languageCode = "en-gb"
+title = "Jason Cabot"
+theme = "jasoncabot"

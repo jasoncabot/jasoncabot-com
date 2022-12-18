@@ -1,0 +1,7 @@
+<div class="col-md-3 text-center">
+  <a href="{{ .Params.link }}" title="{{ .Title }} for {{ .Params.platform }}">
+    <img src="{{ .Params.thumbnail }}" class="center-block img-responsive img-thumbnail">
+  </a>
+  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  {{ .Params.summary }}
+</div>

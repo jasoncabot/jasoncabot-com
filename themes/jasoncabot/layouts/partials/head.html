@@ -1,0 +1,13 @@
+<head>
+    <meta charset="utf-8">
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = print .Site.Title " | Cloud Solution Architect and Software Engineer" }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <meta name="google-site-verification" content="U4_z72FpqGgUnIg8B-9-nx3fvNfCOlioGkT6sP4mFCk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>

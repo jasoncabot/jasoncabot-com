@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: jasoncabot/jasoncabot-com
+  branch: main
+  base_url: https://jasoncabot.com
+  auth_endpoint: /api/auth
+media_folder: "static/img"
+public_folder: "/img"
+collections:
+  - name: 'projects'
+    label: 'Project'
+    folder: 'content/projects'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: "Platform", name: "platform", widget: 'select', options: ["web", "mobile"] }
+      - { label: "Image", name: "thumbnail", widget: 'image', choose_url: true }
+  - name: 'experiences'
+    label: 'Experience'
+    folder: 'content/experiences'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Company', name: 'company', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: '1-line', name: 'oneline', widget: 'string' }
+      - { label: 'Start Date', name: 'date', widget: 'datetime', date_format: true, time_format: false }
+      - { label: "Thumbnail", name: "logo", widget: 'image', choose_url: true }

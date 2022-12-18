@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container">
+    <div class="section">
+        <div class="content">
+            <h1>
+                {{ .Params.company }}<small>&nbsp;&#8212;&nbsp;{{ .Params.position }}</small>
+            </h1>
+
+            <p>
+            <figure>
+                <blockquote cite="{{ .Permalink }}">
+                    {{ .Params.oneline }}
+                </blockquote>
+                <figcaption>&hyphen; {{ .Params.date.Format "January 2006" }}</figcaption>
+            </figure>
+            </p>
+
+            <p>
+                {{ .Content }}
+            </p>
+        </div>
+    </div>
+</div>
+{{ end }}

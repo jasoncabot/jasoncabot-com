@@ -1,0 +1,132 @@
+{{ define "main" }}
+<div class="cover">
+    <div class="cover-image" style="background-image : url('img/background.jpeg')"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-inverse">
+                    <span class="labelled">Jason Cabot</span>
+                </h1>
+                <p class="text-inverse">
+                    <span class="labelled">Software Engineer</span>
+                    <br>
+                </p>
+                <br>
+                <br>
+                <a class="btn btn-lg btn-primary" href="https://www.github.com/jasoncabot">Contact me<br></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Personal Projects</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Mobile</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            {{ range where (where .Site.Pages "Section" "projects" ) "Params.platform" "==" "mobile" }}
+            {{ .Render "summary"}}
+            {{ end }}
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Web</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            {{ range where (where .Site.Pages "Section" "projects" ) "Params.platform" "==" "web" }}
+            {{ .Render "summary"}}
+            {{ end }}
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Experience</h1>
+                <br>
+                <blockquote>
+                    <p>I am an experienced full-stack software engineer with a true passion for mobile development
+                        and getting great software into the hands of customers</p>
+                    <footer>Jason Cabot</footer>
+                </blockquote>
+                <br>
+                {{ range where .Site.RegularPages.ByDate.Reverse "Section" "experiences" }}
+                {{ .Render "summary"}}
+                <br />
+                {{ end }}
+            </div>
+            <div class="col-md-4">
+                <h1>Technical Focus</h1>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;">DevOps</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;">Mobile</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;">Kubernetes</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;">Web Apps</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;">Azure // AWS // Google Cloud</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;">Node // Python // Ruby</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%;">Rust</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <a href="">
+    </a>
+    <div class="container">
+        <a href="">
+        </a>
+        <div class="row text-center">
+            <a href="">
+            </a>
+            <div class="col-xs-6">
+                <a href="https://www.linkedin.com/in/jasoncabot/"><i class="fa fa-4x fa-fw fa-linkedin"></i></a>
+            </div>
+            <div class="col-xs-6">
+                <a href="https://www.github.com/jasoncabot/"><i class="fa fa-4x fa-fw fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
