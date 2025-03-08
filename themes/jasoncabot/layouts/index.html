@@ -38,8 +38,13 @@
         </div>
         <div class="row">
 
+            {{ $count := 0 }}
             {{ range where (where .Site.Pages "Section" "projects" ) "Params.platform" "==" "mobile" }}
-            {{ .Render "summary"}}
+                {{ if eq (mod $count 4) 0 }}
+                    </div><div class="media row">
+                {{ end }}
+                {{ .Render "summary" }}
+                {{ $count = add $count 1 }}
             {{ end }}
 
         </div>
@@ -55,8 +60,13 @@
         </div>
         <div class="row">
 
+            {{ $count := 0 }}
             {{ range where (where .Site.Pages "Section" "projects" ) "Params.platform" "==" "web" }}
-            {{ .Render "summary"}}
+                {{ if eq (mod $count 4) 0 }}
+                    </div><div class="media row">
+                {{ end }}
+                {{ .Render "summary" }}
+                {{ $count = add $count 1 }}
             {{ end }}
 
         </div>

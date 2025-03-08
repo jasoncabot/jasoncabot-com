@@ -23,5 +23,13 @@ Get perfectly cooked eggs every time, no matter the size or desired level of don
 
 > "I'm not a great cook, so I really appreciate the simplicity of this egg timer app. All I have to do is select the size of the eggs and how I like them cooked, and the app takes care of the rest. No more guesswork or overcooked eggs – just perfect eggs every time. It's become a staple in my kitchen and I highly recommend it to anyone looking for an easy and reliable way to cook eggs."
 
+[Download Now](https://itunes.apple.com/us/app/simple-egg-timer/id654683125?mt=8)
+
+# Privacy Policy
+
+We take your privacy seriously. Our egg timer app does not collect any personal information or data from users. We do not track your location, store your personal information. Your privacy is important to us, and we are committed to protecting it.
+
+We use Google AdMob to serve ads in our app. AdMob may collect and use data for personalized advertising. You can learn more about how Google uses data from apps that use its services by visiting the [Google Privacy & Terms](https://policies.google.com/technologies/partner-sites) page.
+
 
 [Download Now](https://itunes.apple.com/us/app/simple-egg-timer/id654683125?mt=8)
